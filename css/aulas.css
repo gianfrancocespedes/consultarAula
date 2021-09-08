@@ -1,0 +1,77 @@
+.aulas {
+    text-align: center;
+    padding: 1rem 8rem;
+}
+.aula {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 120em;
+    padding: 1em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+  
+.contenedor .ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.contenedor .li {
+    padding: 1em;
+    margin: 0 2em 0 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    transition: all 0.5s ease;
+    border: 1px solid #1d1b31;
+    cursor: pointer;
+}
+  
+.contenedor .li.activo {
+    background-color: #1d1b31;
+    color: white;
+}
+  
+.contenedor .subcontenedor {
+    min-height: 10vh;
+    position: relative;
+}
+  
+.contenedor .bloque {
+    margin: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    opacity: 0;
+    transform: translateY(2%);
+    transition: all 0.5s ease;
+}
+  
+.contenedor .bloque.activo {
+    opacity: 1;
+    transform: translateX(0%);
+}
+#misaulas {
+    margin-left: 30rem;
+}
+.contenedor #misaulas.activo {
+    background-color: #2a9946;
+    color: black;
+}
